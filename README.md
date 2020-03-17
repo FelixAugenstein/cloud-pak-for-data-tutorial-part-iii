@@ -38,6 +38,26 @@ To create an initial machine learning flow:
 
 You have now imported an initial flow that we’ll explore in the rest of this tutorial.
 
+![Initial Flow](readme_images/initial-flow.png)
+
+Under the Modeling drop-down menu, you can see the various supported modeling techniques. The first one is Auto Classifier, which tries several techniques and then presents the results of the best one.
+
+The main flow itself defines a pipeline consisting of several steps:
+
+- A Data Asset node for importing the data set
+- A Type node for defining metadata for the features, including a selection of the target attributes for the classification
+- An Auto Data Prep node for preparing the data for modeling
+- A Partition node for partitioning the data into a training set and a testing set
+- An Auto Classifier node called ‘churn’ for creating and evaluating the model
+
+Additional nodes have been associated with the main pipeline for viewing the input and output. These are:
+- A Table output node called ‘Input Table’ for previewing the input data
+- A Data Audit node called ’21 fields’ (default name) for auditing the quality of the input data set (min, max, standard, and deviation)
+- An Evaluation node for evaluating the generated model
+- A Table output node called ‘Result Table’ for previewing the results of the test prediction
+
+Other input and output types can be viewed by selecting the Outputs drop-down menu.
+
 ## Assign data asset and run the flow
 
 Text
