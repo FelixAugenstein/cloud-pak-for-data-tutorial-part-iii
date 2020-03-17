@@ -60,7 +60,23 @@ Other input and output types can be viewed by selecting the Outputs drop-down me
 
 ## Assign data asset and run the flow
 
-Text
+To run the flow, you must first connect the flow with the appropriate set of test data available in your project.
+
+1. Select the three dots of the Data Asset node to the left of the flow (the input node).
+2. Select the Open command from the menu. This shows the attributes of the node in the right part of the page.
+
+![Change Data Asset](readme_images/change-data-asset.png)
+
+3. Click Change data asset to change the input file.
+4. On the next page, select your .CSV file that contains the customer churn, and click OK.
+5. Click Save.
+6. Click Run (the arrow head) in the toolbar to run the flow.
+
+![Run Flow](readme_images/run-flow.png)
+
+Running the flow creates a number of outputs or results that can be inspected in more detail.
+
+![Outputs](readme_images/outputs.png)
 
 ## Understanding the data
 
