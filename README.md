@@ -18,7 +18,37 @@ This tutorial consists of 4 parts, you can start with part I or any other part, 
 
 The 4 parts of this tutorial are based on the [Learning path: Getting started with Watson Studio](https://developer.ibm.com/series/learning-path-watson-studio/).
 
+## Create model flow
 
+Text
+
+## Assign data asset and run the flow
+
+Text
+
+## Understanding the data
+
+Text
+
+## Data preparation
+
+Text
+
+## Training the model
+
+Text
+
+## Evaluating the model
+
+Text
+
+## Saving and deploying the model
+
+Text
+
+## Testing the model
+
+Text
 
 ## If you have any questions just contact me
 Felix Augenstein<br>
