@@ -20,7 +20,23 @@ The 4 parts of this tutorial are based on the [Learning path: Getting started wi
 
 ## Create model flow
 
-Text
+To create an initial machine learning flow:
+
+1. From the Assets page, click Add to project.
+2. In the Choose asset type page, select Modeler Flow.
+
+![Modeler Flow](readme_images/modeler-flow.png)
+
+3. On the Modeler page, select the ‘From File’ tab.
+4. Download the model flow that is named ‘customer-churn-flow.str’ from this repository.
+5. Drag the downloaded modeler flow file to the upload area or browse for it. This also sets the name for the flow.
+
+![Upload Flow File](readme_images/upload-flow-file.png)
+
+6. Change the name and provide a description for the machine learning flow (optional).
+7. Click Create. This opens the Flow Editor that can be used to create a machine learning flow.
+
+You have now imported an initial flow that we’ll explore in the rest of this tutorial.
 
 ## Assign data asset and run the flow
 
