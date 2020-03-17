@@ -81,27 +81,34 @@ Running the flow creates a number of outputs or results that can be inspected in
 
 ## Understanding the data
 
-Text
+Now that you have run the flow, take a closer look at the data.
+
+1. Select the Input Table node at the top of the flow diagram.
+2. Select the three dots in the upper-right corner and invoke the Profile command from the pop-up menu.
+
+![Profile Command](readme_images/profile-command.png)
+
+The last interaction might run part of the flow again but has the advantage that the page provides a Profile tab for profiling the data and a Visualization tab for creating dashboards.
 
 ## Data preparation
 
-Text
+
 
 ## Training the model
 
-Text
+
 
 ## Evaluating the model
 
-Text
+
 
 ## Saving and deploying the model
 
-Text
+
 
 ## Testing the model
 
-Text
+
 
 ## If you have any questions just contact me
 Felix Augenstein<br>
