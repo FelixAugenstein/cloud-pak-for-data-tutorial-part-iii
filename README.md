@@ -94,9 +94,38 @@ This gives you an overview of the data columns, such as the values for their min
 
 ![21 Fields](readme_images/21-fields.png)
 
+For each feature, the overview shows the distribution in graphical form and whether the feature is categorical or continuous. For numerical features, the computed min, max, mean, standard deviation, and skewness are shown as well. From the column named Valid, you can see that there are 3333 valid values, which means that no values are missing for the listed features and you do not need to bother further with this aspect of preprocessing to filter or transform the columns with lacking values.
+
 ## Data preparation
 
+You can change the initial assessment of the features made by the import by using the Type node, which happens to be the next node in the pipeline. To achieve this:
 
+1. Go back to the Flow Editor by selecting ‘customer-churn-flow’ in the toolbar.
+2. Select the Type node.
+3. Select the Open command from the pop-up menu.
+
+This provides a table that shows the features (such as fields), their kind (for example, continuous or flag), and role, along with others.
+
+![Open Type](readme_images/open-type.png)
+
+The Measure can be changed if needed using this node and it is also possible to specify the role of a feature. In this case, the role of the churn feature (which is a Flag with True and False values) has been changed to Target. The Check column might give you more insight into the values of the field.
+
+Click Cancel to close the property editor for the Type node.
+
+The next node in the pipeline is the Auto Data Prep node. This node automatically transforms the data, such as converting categorical fields into numerical ones. To view its results:
+
+1. Select the Auto Data Prep node in the flow editor.
+2. Select Open from the pop-up menu.
+
+This node offers a multitude of settings, for example, for defining the objective of the transformation (optimize for speed or for accuracy).
+
+![Open Auto Data Prep](readme_images/open-auto-data-prep.png)
+
+The previous image shows that the transformation has been configured to exclude fields with too many missing values (threshold is 50) and to exclude fields with too many unique categories. Assume that the latter applies to the phone numbers and don’t worry about them.
+
+The next node in the pipeline is the Partition node, which splits the data set into a training set and a testing set. For the current Partition node, an 80-20 split has been used.
+
+![Open Partition](readme_images/open-partition.png)
 
 ## Training the model
 
