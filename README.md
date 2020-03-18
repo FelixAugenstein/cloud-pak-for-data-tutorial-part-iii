@@ -83,12 +83,16 @@ Running the flow creates a number of outputs or results that can be inspected in
 
 Now that you have run the flow, take a closer look at the data.
 
-1. Select the Input Table node at the top of the flow diagram.
-2. Select the three dots in the upper-right corner and invoke the Profile command from the pop-up menu.
+1. Select the View outputs and versions command from the upper-right portion of the toolbar.
+2. Select the Outputs tab.
 
-![Profile Command](readme_images/profile-command.png)
+![Open Outputs](readme_images/open-outputs.png)
 
-The last interaction might run part of the flow again but has the advantage that the page provides a Profile tab for profiling the data and a Visualization tab for creating dashboards.
+3. Double-click the output for the “data audit” node named “21 Fields.” Alternatively, select the three dots associated with the output and select Open from the pop-up menu.
+
+This gives you an overview of the data columns, such as the values for their minimum, maximum, mean, and standard deviation, like the one in the following image.
+
+![21 Fields](readme_images/21-fields.png)
 
 ## Data preparation
 
