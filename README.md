@@ -129,7 +129,7 @@ The next node in the pipeline is the Partition node, which splits the data set i
 
 ## Training the model
 
-
+The next node in the SPSS Modeler flow is the Auto Classifier node named “churn.” This node trains the model based on various build options, such as how to rank and discard generated models (using threshold accuracy).
 
 ## Evaluating the model
 
