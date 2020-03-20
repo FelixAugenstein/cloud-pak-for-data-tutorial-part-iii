@@ -131,6 +131,13 @@ The next node in the pipeline is the Partition node, which splits the data set i
 
 The next node in the SPSS Modeler flow is the Auto Classifier node named “churn.” This node trains the model based on various build options, such as how to rank and discard generated models (using threshold accuracy).
 
+![Open Churn](readme_images/open-churn.png)
+
+If you Open the node and select the BUILD OPTIONS option from the drop-down menu, you see the property Number of models to use is set to 3, which is the default value. Feel free to change it to a higher number, and then click Save to save the changes.
+
+Remember to rerun the flow if you change any build settings.
+
+
 ## Evaluating the model
 
 
