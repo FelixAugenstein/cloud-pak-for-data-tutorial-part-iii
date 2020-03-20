@@ -184,9 +184,31 @@ The model is saved to the current project and should now appear in the Models se
 
 ![Saved SPSS Model Asset](readme_images/saved-spss-model-asset.png)
 
+To deploy the SPSS model:
+
+1. Click the saved model in the project Models list.
+2. Select the Deployments tab.
+3. Click Add Deployment to create a new web service deployment named ‘customer-churn-spss-model-web-service.’
+4. Set the deployment type to Web Service.
+5. Click Save.
+
+![Add Deployment](readme_images/add-deployment.png)
+
+6. Wait until the deployment status goes from Initializing to Deploy success.
+
 ## Testing the model
 
+Click on the deployment to get more details. If you click the Implementation tab, you will see the scoring endpoint. In the Code Snippets section, you can see examples of how to access the scoring endpoint programmatically.
 
+On the Test tab, we can pass in a scoring payload JSON object to score the model. After supplying the data, press Predict to score the model. Use the following JSON Code:
+
+```
+{"input_data":[{"fields": ["state", "account length", "area code", "phone number", "international plan", "voice mail plan", "number vmail messages", "total day minutes", "total day calls", "total day charge", "total eve minutes", "total eve calls", "total eve charge", "total night minutes", "total night calls", "total night charge", "total intl minutes", "total intl calls", "total intl charge", "customer service calls"], "values": [["NY",161,415,"351-7269","no","no",0,332.9,67,56.59,317.8,97,27.01,160.6,128,7.23,5.4,9,1.46,4]]}]}
+```
+
+![Model Prediction](readme_images/model-prediction.png)
+
+The prediction result is given in terms of the probability that the customer will churn (True) or not (False). You can try it with other values.
 
 ## If you have any questions just contact me
 Felix Augenstein<br>
