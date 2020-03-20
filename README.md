@@ -163,7 +163,26 @@ You can now hover over either one of the nodes or one of the branches in the tre
 
 ## Saving and deploying the model
 
+After you create, train, and evaluate a model, you can save and deploy it.
 
+To save the SPSS model:
+
+1. Go back to the flow editor for the model flow.
+2. Select the Predicted Output node and open its pop-up menu by selecting the 3 dots in the upper-right corner.
+3. Select Save branch as model from the pop-up menu.
+
+![Save Branch as Model](readme_images/save-branch-as-model.png)
+
+A new window opens.
+
+![Save Model](readme_images/save-model.png)
+
+4. Type a model name (for example, ‘customer-churn-spss-model’).
+5. Click Save.
+
+The model is saved to the current project and should now appear in the Models section of the Assets tab for the project.
+
+![Saved SPSS Model Asset](readme_images/saved-spss-model-asset.png)
 
 ## Testing the model
 
