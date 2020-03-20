@@ -140,7 +140,26 @@ Remember to rerun the flow if you change any build settings.
 
 ## Evaluating the model
 
+To get more details about the generated model:
 
+1. Select the yellow model icon.
+2. Select View Model from the drop-down menu.
+
+![View Model](readme_images/view-model.png)
+
+This overview section gives you a list of classifier models and their accuracy. In this example, the number of models to use is the default value 3.
+
+![Models Accuracy](readme_images/models-accuracy.png)
+
+As you navigate through this overview section, you’ll notice that the number of options and views that are associated with each estimator varies. In some cases, a hyperlink is provided to dig down into more details.
+
+For example, take a look at the poor performing ‘C&RT’ Tree Model by clicking the name in the table.
+
+On the next page, select the Tree Diagram link to the left to get the tree diagram for the estimator.
+
+You can now hover over either one of the nodes or one of the branches in the tree to get more detailed information about a decision made at a given point.
+
+![Tree Diagram](readme_images/tree-diagram.png)
 
 ## Saving and deploying the model
 
