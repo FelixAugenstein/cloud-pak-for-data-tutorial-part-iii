@@ -1,5 +1,5 @@
-<h1 align="center" style="border-bottom: none;">:bar_chart: IBM Digital Tech Tutorial: Watson Studio Part III</h1>
-<h3 align="center">In this hands-on tutorial you will graphically build and evaluate machine learning models by using the SPSS Modeler flow feature in IBM Watson Studio.</h3>
+<h1 align="center" style="border-bottom: none;">:bar_chart: IBM Cloud Pak for Data: Part III</h1>
+<h3 align="center">In this hands-on tutorial you will graphically build and evaluate machine learning models by using the SPSS Modeler flow feature in IBM Cloud Pak for Data.</h3>
 
 ## Prerequisites
 
@@ -11,11 +11,11 @@
 ## Digital Tech Tutorial Watson Studio Part I to V
 
 This tutorial consists of 5 parts, you can start with part I or any other part, however, the necessary environment is set up in part I.<br>
-[Part I - data visualization, preparation, and transformation](https://github.com/FelixAugenstein/digital-tech-tutorial-watson-studio)<br>
-[Part II - build and evaluate machine learning models by using the AutoAI](https://github.com/FelixAugenstein/digital-tech-tutorial-watson-studio-part-ii/)<br>
-[Part III - graphically build and evaluate machine learning models by using the SPSS Modeler flow](https://github.com/FelixAugenstein/digital-tech-tutorial-watson-studio-part-iii/)<br>
-[Part IV - set up and run Jupyter Notebooks to develop a machine learning model](https://github.com/FelixAugenstein/digital-tech-tutorial-watson-studio-part-iv/)<br>
-[Part V - deploy a local app to test your model](https://github.com/FelixAugenstein/digital-tech-tutorial-watson-studio-part-v/) 
+[Part I - data visualization, preparation, and transformation](https://github.com/FelixAugenstein/cloud-pak-for-data-tutorial)<br>
+[Part II - build and evaluate machine learning models by using the AutoAI](https://github.com/FelixAugenstein/cloud-pak-for-data-tutorial-part-ii)<br>
+[Part III - graphically build and evaluate machine learning models by using the SPSS Modeler flow](https://github.com/FelixAugenstein/cloud-pak-for-data-tutorial-part-iii)<br>
+[Part IV - set up and run Jupyter Notebooks to develop a machine learning model](https://github.com/FelixAugenstein/cloud-pak-for-data-tutorial-part-iv)<br>
+[Part V - deploy a local app to test your model](https://github.com/FelixAugenstein/cloud-pak-for-data-tutorial-part-v) 
 
 The first 4 parts of this tutorial are based on the [Learning path: Getting started with Watson Studio](https://developer.ibm.com/series/learning-path-watson-studio/).
 
@@ -154,7 +154,7 @@ This overview section gives you a list of classifier models and their accuracy. 
 
 As you navigate through this overview section, you’ll notice that the number of options and views that are associated with each estimator varies. In some cases, a hyperlink is provided to dig down into more details.
 
-For example, take a look at the poor performing ‘C&RT’ Tree Model by clicking the name in the table.
+For example, take a look at the poor performing 'C&RT Tree Model' by clicking the name in the table.
 
 On the next page, select the Tree Diagram link to the left to get the tree diagram for the estimator.
 
@@ -170,7 +170,7 @@ To save the SPSS model:
 
 1. Go back to the flow editor for the model flow.
 2. Select the Predicted Output node and open its pop-up menu by selecting the 3 dots in the upper-right corner.
-3. Select Save branch as model from the pop-up menu.
+3. Select Save branch as a model from the pop-up menu.
 
 ![Save Branch as Model](readme_images/save-branch-as-model.png)
 
@@ -178,7 +178,7 @@ A new window opens.
 
 ![Save Model](readme_images/save-model.png)
 
-4. Type a model name (for example, ‘customer-churn-spss-model’).
+4. Type a model name (for example ‘customer-churn-spss-model’).
 5. Click Save.
 
 The model is saved to the current project and should now appear in the Models section of the Assets tab for the project.
@@ -188,14 +188,22 @@ The model is saved to the current project and should now appear in the Models se
 To deploy the SPSS model:
 
 1. Click the saved model in the project Models list.
-2. Select the Deployments tab.
-3. Click Add Deployment to create a new web service deployment named ‘customer-churn-spss-model-web-service.’
-4. Set the deployment type to Web Service.
-5. Click Save.
+2. Click Promote to deployment space.
 
-![Add Deployment](readme_images/add-deployment.png)
+![Add Deployment1](readme_images/add-deployment1.png)
 
-6. Wait until the deployment status goes from Initializing to Deploy success.
+3. Keep the default settings and click Promote.
+
+![Add Deployment2](readme_images/add-deployment2.png)
+
+4. Go to the Deployment space.
+5. Click the Deploy button next to the customer-churn-spss-model.
+6. Choose Online as Deployment Type and name the deployment (for example ‘customer-churn-spss-model-web-service’).
+7. Click Create.
+
+![Add Deployment3](readme_images/add-deployment3.png)
+
+9. Wait until the deployment status goes from Initializing to Deployed.
 
 ## Testing the model
 
