@@ -1,5 +1,5 @@
 <h1 align="center" style="border-bottom: none;">:bar_chart: IBM Cloud Pak for Data: Part III</h1>
-<h3 align="center">In this hands-on tutorial you will graphically build and evaluate machine learning models by using the SPSS Modeler flow feature in IBM Cloud Pak for Data.</h3>
+<h3 align="center">In this hands-on tutorial you will graphically build and evaluate machine learning models by using the SPSS Modeler flow feature in Watson Studio.</h3>
 
 ## Prerequisites
 
@@ -69,7 +69,7 @@ To run the flow, you must first connect the flow with the appropriate set of tes
 ![Change Data Asset](readme_images/change-data-asset.png)
 
 3. Click Change data asset to change the input file. 
-4. On the next page, select the 'customer-churn-analysis.csv' file that contains the customer churn, and click OK. 
+4. On the next page, select your .CSV file that contains the customer churn, and click OK. 
 5. Select comma(,) as a field delimiter, none as quote character and period (.) as decimal symbol.
 6. Click Save.
 7. Click Run (the arrow head) in the toolbar to run the flow.
