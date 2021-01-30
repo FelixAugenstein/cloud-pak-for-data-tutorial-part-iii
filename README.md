@@ -1,4 +1,4 @@
-<h1 align="center" style="border-bottom: none;">:bar_chart: IBM Cloud Pak for Data: Part III</h1>
+<h1 align="center" style="border-bottom: none;">:bar_chart: IBM Cloud Pak for Data Tutorial: Part III</h1>
 <h3 align="center">In this hands-on tutorial you will graphically build and evaluate machine learning models by using the SPSS Modeler flow feature in Watson Studio.</h3>
 
 ## Prerequisites
