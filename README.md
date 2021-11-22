@@ -84,7 +84,7 @@ To run the flow, you must first connect the flow with the appropriate set of tes
 
 3. Click Change data asset to change the input file. 
 4. On the next page, select your .CSV file that contains the customer churn, and click OK. 
-5. Select comma(,) as a field delimiter, none as quote character and period (.) as decimal symbol.
+5. If required: Select comma(,) as a field delimiter, none as quote character and period (.) as decimal symbol.
 6. Click Save.
 7. Click Run (the arrow head) in the toolbar to run the flow.
 
