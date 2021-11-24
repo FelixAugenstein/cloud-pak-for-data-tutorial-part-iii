@@ -92,7 +92,7 @@ To run the flow, you must first connect the flow with the appropriate set of tes
 
 Running the flow creates a number of outputs or results that can be inspected in more detail.
 
-![Outputs](readme_images/outputs.png)
+![Outputs](readme_images/outputs-new.png)
 
 ## Understanding the data
 
@@ -164,7 +164,7 @@ To get more details about the generated model:
 
 This overview section gives you a list of classifier models and their accuracy. In this example, the number of models to use is the default value 3.
 
-![Models Accuracy](readme_images/models-accuracy.png)
+![Models Accuracy](readme_images/models-accuracy-new.png)
 
 As you navigate through this overview section, you’ll notice that the number of options and views that are associated with each estimator varies. In some cases, a hyperlink is provided to dig down into more details.
 
@@ -174,7 +174,7 @@ On the next page, select the Tree Diagram link to the left to get the tree diagr
 
 You can now hover over either one of the nodes or one of the branches in the tree to get more detailed information about a decision made at a given point.
 
-![Tree Diagram](readme_images/tree-diagram.png)
+![Tree Diagram](readme_images/tree-diagram-new.png)
 
 ## Saving and deploying the model
 
@@ -226,7 +226,7 @@ Click on the deployment to get more details. If you click the Implementation tab
 On the Test tab, we can pass in a scoring payload JSON object to score the model. After supplying the data, press Predict to score the model. Use the following JSON Code:
 
 ```
-{"input_data":[{"fields": ["state", "account length", "area code", "phone number", "international plan", "voice mail plan", "number vmail messages", "total day minutes", "total day calls", "total day charge", "total eve minutes", "total eve calls", "total eve charge", "total night minutes", "total night calls", "total night charge", "total intl minutes", "total intl calls", "total intl charge", "customer service calls"], "values": [["NY",161,415,"351-7269","no","no",0,332.9,67,56.59,317.8,97,27.01,160.6,128,7.23,5.4,9,1.46,4]]}]}
+{"input_data":[{"fields": ["state", "account length", "area code", "phone number", "international plan", "churn", "voice mail plan", "number vmail messages", "total day minutes", "total day calls", "total day charge", "total eve minutes", "total eve calls", "total eve charge", "total night minutes", "total night calls", "total night charge", "total intl minutes", "total intl calls", "total intl charge", "customer service calls"], "values": [["NY",161,415,"351-7269","no","no","no",0,332.9,67,56.59,317.8,97,27.01,160.6,128,7.23,5.4,9,1.46,4]]}]}
 ```
 
 ![Model Prediction](readme_images/model-prediction.png)
