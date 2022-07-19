@@ -40,13 +40,13 @@ To create an initial machine learning flow:
 1. From the Assets page, click Add to project.
 2. In the Choose asset type page, select Modeler Flow.
 
-![Modeler Flow](readme_images/modeler-flow.png)
+![Modeler Flow](readme_images/select-SPSS-Modeler.png)
 
 3. On the Modeler page, select the ‘From File’ tab.
 4. Download the model flow that is named ‘customer-churn-flow.str’ from this repository.
 5. Drag the downloaded modeler flow file to the upload area or browse for it. This also sets the name for the flow.
 
-![Upload Flow File](readme_images/upload-flow-file.png)
+![Upload Flow File](readme_images/SPSS-Modeler-from-file.png)
 
 6. Change the name and provide a description for the machine learning flow (optional).
 7. Click Create. This opens the Flow Editor that can be used to create a machine learning flow.
@@ -197,7 +197,7 @@ A new window opens.
 
 The model is saved to the current project and should now appear in the Models section of the Assets tab for the project.
 
-![Saved SPSS Model Asset](readme_images/saved-spss-model-asset.png)
+![Saved SPSS Model Asset](readme_images/SPSS-Modeler-location.png)
 
 To deploy the SPSS model:
 
@@ -229,6 +229,6 @@ On the Test tab, we can pass in a scoring payload JSON object to score the model
 {"input_data":[{"fields": ["state", "account length", "area code", "phone number", "international plan", "churn", "voice mail plan", "number vmail messages", "total day minutes", "total day calls", "total day charge", "total eve minutes", "total eve calls", "total eve charge", "total night minutes", "total night calls", "total night charge", "total intl minutes", "total intl calls", "total intl charge", "customer service calls"], "values": [["NY",161,415,"351-7269","no","no","no",0,332.9,67,56.59,317.8,97,27.01,160.6,128,7.23,5.4,9,1.46,4]]}]}
 ```
 
-![Model Prediction](readme_images/model-prediction.png)
+![Model Prediction](readme_images/insert-test-data-Model.png)
 
 The prediction result is given in terms of the probability that the customer will churn (1/True) or not (0/False). You can try it with other values.
