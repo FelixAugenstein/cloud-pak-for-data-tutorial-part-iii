@@ -38,7 +38,7 @@ In this tutorial we have a business understanding provided (predict churns) and 
 To create an initial machine learning flow:
 
 1. From the Assets page, click Add to project.
-2. In the Choose asset type page, select Modeler Flow.
+2. In the Choose asset type page, select SPSS Modeler.
 
 ![Modeler Flow](readme_images/select-SPSS-Modeler.png)
 
