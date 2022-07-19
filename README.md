@@ -78,7 +78,7 @@ Other input and output types can be viewed by selecting the Outputs drop-down me
 To run the flow, you must first connect the flow with the appropriate set of test data available in your project.
 
 1. Select the three dots of the Data Asset node to the left of the flow (the input node).
-2. Select the Open command from the menu. This shows the attributes of the node in the right part of the page. 
+2. Double-Click the node to Open. This shows the attributes of the node in the right part of the page. 
 
 ![Change Data Asset](readme_images/change-data-asset.png)
 
@@ -117,7 +117,7 @@ You can change the initial assessment of the features made by the import by usin
 
 1. Go back to the Flow Editor by selecting ‘customer-churn-flow’ in the toolbar.
 2. Select the Type node.
-3. Select the Open command from the pop-up menu.
+3. Double-Click the node to Open.
 
 This provides a table that shows the features (such as fields), their kind (for example, continuous or flag), and role, along with others.
 
@@ -130,7 +130,7 @@ Click Cancel to close the property editor for the Type node.
 The next node in the pipeline is the Auto Data Prep node. This node automatically transforms the data, such as converting categorical fields into numerical ones. To view its results:
 
 1. Select the Auto Data Prep node in the flow editor.
-2. Select Open from the pop-up menu.
+2. Double-Click the node to Open.
 
 This node offers a multitude of settings, for example, for defining the objective of the transformation (optimize for speed or for accuracy).
 
